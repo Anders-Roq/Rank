@@ -18,12 +18,17 @@ function calcularRank(saldoVitorias){
       } else if (saldoVitorias >= 51 && saldoVitorias <= 80) {
         rank = "Ouro"      
       } else if (saldoVitorias >= 81 && saldoVitorias <= 90) {
-        rank = "Diamane"
+        rank = "Diamante"
       } else if (saldoVitorias >= 91 && saldoVitorias <= 100) {
-        rank = "Lendáro"
+        rank = "Lendário"
       } else{
         rank = "Imortal"
       }
       return rank
 }
+
+
+      let saldo = saldoVitorias(vitorias,derrotas)
+      let rank = calcularRank(saldo)
+      
       alert("O heroi tem saldo de: "+saldo+ " vitórias e está no nivel de: "+rank)
